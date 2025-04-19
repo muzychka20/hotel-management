@@ -34,6 +34,8 @@ namespace HotelManagement
 		{
 			MovingPanel.Left = btnAddRoom.Left + 15;
 			MovingPanel.Width = btnAddRoom.Width - 30;
+			uC_AddRoom1.Visible = true;
+			uC_AddRoom1.BringToFront();
 		}
 
 		private void btnCheckOut_Click(object sender, EventArgs e)
@@ -57,6 +59,11 @@ namespace HotelManagement
 		private void btnMinimize_Click(object sender, EventArgs e)
 		{
 			this.WindowState = FormWindowState.Minimized;
+		}
+
+		private void Dashboard_Load(object sender, EventArgs e)
+		{
+			uC_AddRoom1.Visible = false;
 		}
 	}
 }
