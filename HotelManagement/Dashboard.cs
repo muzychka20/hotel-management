@@ -15,6 +15,48 @@ namespace HotelManagement
 		public Dashboard()
 		{
 			InitializeComponent();
+			MovingPanel.Left = btnAddRoom.Left + 15;
+			MovingPanel.Width = btnAddRoom.Width - 30;
+		}
+
+		private void btnExit_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void btnCustomerRegistration_Click(object sender, EventArgs e)
+		{
+			MovingPanel.Left = btnCustomerRegistration.Left + 15;
+			MovingPanel.Width = btnCustomerRegistration.Width - 30;
+		}
+
+		private void btnAddRoom_Click(object sender, EventArgs e)
+		{
+			MovingPanel.Left = btnAddRoom.Left + 15;
+			MovingPanel.Width = btnAddRoom.Width - 30;
+		}
+
+		private void btnCheckOut_Click(object sender, EventArgs e)
+		{
+			MovingPanel.Left = btnCheckOut.Left + 15;
+			MovingPanel.Width = btnCheckOut.Width - 30;
+		}
+
+		private void btnCustomerDetail_Click(object sender, EventArgs e)
+		{
+			MovingPanel.Left = btnCustomerDetail.Left + 15;
+			MovingPanel.Width = btnCustomerDetail.Width - 30;
+		}
+
+		private void btnEmployee_Click(object sender, EventArgs e)
+		{
+			MovingPanel.Left = btnEmployee.Left + 15;
+			MovingPanel.Width = btnEmployee.Width - 30;
+		}
+
+		private void btnMinimize_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
 		}
 	}
 }
