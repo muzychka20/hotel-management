@@ -64,6 +64,7 @@ namespace HotelManagement
 		private void Dashboard_Load(object sender, EventArgs e)
 		{
 			uC_AddRoom1.Visible = false;
+			btnAddRoom.PerformClick();
 		}
 	}
 }
