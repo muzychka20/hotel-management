@@ -289,3 +289,244 @@ select * from refStreet
 select * from refCity
 select * from refCountry
 */
+
+/*
+CREATE TABLE refNationality (
+    id INT identity(1,1) PRIMARY KEY,
+    name NVARCHAR(100)
+);
+*/
+
+--INSERT INTO refNationality (name) VALUES 
+--('Afghan'),
+--('Algerian'),
+--('Angolan'),
+--('Argentine'),
+--('Austrian'),
+--('Australian'),
+--('Bangladeshi'),
+--('Belarusian'),
+--('Belgian'),
+--('Bolivian'),
+--('Bosnian'),
+--('Herzegovinian'),
+--('Brazilian'),
+--('British'),
+--('Bulgarian'),
+--('Cambodian'),
+--('Cameroonian'),
+--('Canadian'),
+--('Central African'),
+--('Chadian'),
+--('Chinese'),
+--('Colombian'),
+--('Costa Rican'),
+--('Croatian'),
+--('Czech'),
+--('Congolese'),
+--('Danish'),
+--('Ecuadorian'),
+--('Egyptian'),
+--('Salvadoran'),
+--('English'),
+--('Estonian'),
+--('Ethiopian'),
+--('Finnish'),
+--('French'),
+--('German'),
+--('Ghanaian'),
+--('Greek'),
+--('Guatemalan'),
+--('Dutch'),
+--('Honduran'),
+--('Hungarian'),
+--('Icelandic'),
+--('Indian'),
+--('Indonesian'),
+--('Iranian'),
+--('Iraqi'),
+--('Irish'),
+--('Israeli'),
+--('Italian'),
+--('Ivorian'),
+--('Jamaican'),
+--('Japanese'),
+--('Jordanian'),
+--('Kazakh'),
+--('Kenyan'),
+--('Lao'),
+--('Latvian'),
+--('Libyan'),
+--('Lithuanian'),
+--('Malagasy'),
+--('Malaysian'),
+--('Malian'),
+--('Mauritanian'),
+--('Mexican'),
+--('Moroccan'),
+--('Namibian'),
+--('New Zealand'),
+--('Nicaraguan'),
+--('Nigerien'),
+--('Nigerian'),
+--('Norwegian'),
+--('Omani'),
+--('Pakistani'),
+--('Panamanian'),
+--('Paraguayan'),
+--('Peruvian'),
+--('Philippine'),
+--('Polish'),
+--('Portuguese'),
+--('Romanian'),
+--('Russian'),
+--('Saudi'),
+--('Saudi Arabian'),
+--('Scottish'),
+--('Senegalese'),
+--('Serbian'),
+--('Singaporean'),
+--('Slovak'),
+--('Somalian'),
+--('South African'),
+--('Spanish'),
+--('Sudanese'),
+--('Swedish'),
+--('Swiss'),
+--('Syrian'),
+--('Thai'),
+--('Tunisian'),
+--('Turkish'),
+--('Turkmen'),
+--('Ukranian'),
+--('Emirati'),
+--('American'),
+--('Uruguayan'),
+--('Vietnamese'),
+--('Welsh'),
+--('Zambian'),
+--('Zimbabwean');
+
+/*
+create proc ui_GetNationlities
+as begin
+	select * from refNationality
+end
+
+-- exec ui_GetNationlities
+*/
+
+/*
+create TABLE refGender (
+    id INT identity(1,1) PRIMARY KEY,
+    name NVARCHAR(10),
+	short_name NVARCHAR(1)
+);
+*/
+
+/*
+INSERT INTO refGender (name, short_name) VALUES 
+('Male', 'M'),
+('Female', 'F')
+
+create proc ui_GetGender
+as begin
+	select id, name from refGender
+end
+
+-- exec ui_GetGender
+*/
+
+/*
+create table wtCustomer(
+	id int identity(1,1) primary key,
+	name varchar(250) not null,
+	phone varchar(12) not null,
+	nationality int not null,
+	gender int not null,
+	dob date,
+	idproof varchar(50) not null,
+	location int not null,
+	checkin datetime not null,
+	checkout datetime,
+	room_id int not null,
+	foreign key (nationality) references refNationality(id),
+	foreign key (gender) references refGender(id),
+	foreign key (location) references refLocation(id),
+	foreign key (room_id) references wtRooms(room_id)
+)
+*/
+
+/*
+CREATE PROCEDURE InsertCustomer
+    @name VARCHAR(250),
+    @phone VARCHAR(12),
+    @nationality INT,
+    @gender INT,
+    @dob DATE,
+    @idproof VARCHAR(50),
+    @location INT,
+    @checkin DATETIME,
+    @checkout DATETIME = NULL,
+    @room_id INT
+AS
+BEGIN
+    INSERT INTO wtCustomer (
+        name, phone, nationality, gender, dob, idproof,
+        location, checkin, checkout, room_id
+    )
+    VALUES (
+        @name, @phone, @nationality, @gender, @dob, @idproof,
+        @location, @checkin, @checkout, @room_id
+    );
+END;
+*/
+
+
+/*
+EXEC InsertCustomer 
+    @name = 'John Doe',
+    @phone = '1234567890',
+    @nationality = 1,
+    @gender = 1,
+    @dob = '15-05-1990',
+    @idproof = 'AB123456',
+    @location = 2,
+    @checkin = '2025-21-04 14:00:00',
+    @checkout = NULL,
+    @room_id = 5;
+	*/
+
+
+/*
+CREATE PROCEDURE ui_GetCustomers
+AS
+BEGIN
+    SELECT 
+        c.id,
+        c.name,
+        c.phone,
+        c.dob,
+        c.idproof,
+        c.checkin,
+        c.checkout,
+        g.name AS gender_name,
+        n.name AS nationality_name,
+        r.room_no,
+        cn.name AS country,
+        ci.name AS city,
+        s.name AS street,
+        h.house_number AS house
+    FROM wtCustomer c
+    LEFT JOIN refGender g ON c.gender = g.id
+    LEFT JOIN refNationality n ON c.nationality = n.id
+    LEFT JOIN wtRooms r ON c.room_id = r.room_id
+    LEFT JOIN refLocation l ON c.location = l.id
+    LEFT JOIN refHouse h ON l.house = h.id
+    LEFT JOIN refStreet s ON h.street = s.id
+    LEFT JOIN refCity ci ON s.city = ci.id
+    LEFT JOIN refCountry cn ON ci.country = cn.id;
+END;
+*/
+
+-- exec ui_GetCustomers
