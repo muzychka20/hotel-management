@@ -499,7 +499,7 @@ EXEC InsertCustomer
 
 
 /*
-CREATE PROCEDURE ui_GetCustomers
+alter proc ui_GetCustomers
 AS
 BEGIN
     SELECT 
@@ -516,7 +516,8 @@ BEGIN
         cn.name AS country,
         ci.name AS city,
         s.name AS street,
-        h.house_number AS house
+        h.house_number AS house,
+		l.name AS location
     FROM wtCustomer c
     LEFT JOIN refGender g ON c.gender = g.id
     LEFT JOIN refNationality n ON c.nationality = n.id
