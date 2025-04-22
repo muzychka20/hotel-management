@@ -45,17 +45,43 @@ namespace HotelManagement
 			}
 		}
 
-		public DataTable GetTable(string query)
+		public DataTable GetTable(string query, Dictionary<string, object> parameters = null)
 		{
-			using (SqlConnection connection = GetConnection())
-			using (SqlCommand cmd = new SqlCommand(query, connection))
-			using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+			using (SqlConnection connection = new SqlConnection(_connectionString))
+			using (SqlCommand command = new SqlCommand(query, connection))
 			{
+				if (parameters != null)
+				{
+					foreach (var param in parameters)
+					{
+						command.Parameters.AddWithValue(param.Key, param.Value);
+					}
+				}
+				SqlDataAdapter adapter = new SqlDataAdapter(command);
 				DataTable table = new DataTable();
 				adapter.Fill(table);
 				return table;
 			}
 		}
 
+		public void ExecuteStoredProcedure(string procedureName, Dictionary<string, object> parameters)
+		{
+			using (SqlConnection connection = GetConnection())
+			using (SqlCommand command = new SqlCommand(procedureName, connection))
+			{
+				command.CommandType = CommandType.StoredProcedure;
+
+				if (parameters != null)
+				{
+					foreach (var param in parameters)
+					{
+						command.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
+					}
+				}
+
+				connection.Open();
+				command.ExecuteNonQuery();
+			}
+		}
 	}
 }

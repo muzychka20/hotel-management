@@ -12,9 +12,9 @@ namespace HotelManagement
 	{
 		DatabaseHelper databaseHelper = new DatabaseHelper();
 
-		public void LoadComboBox(ComboBox comboBox, string query, string displayMember, string valueMember)
+		public void LoadComboBox(ComboBox comboBox, string query, string displayMember, string valueMember, Dictionary<string, object> parameters = null)
 		{
-			DataTable data = databaseHelper.GetTable(query);
+			DataTable data = databaseHelper.GetTable(query, parameters);
 			comboBox.DataSource = data;
 			comboBox.DisplayMember = displayMember;
 			comboBox.ValueMember = valueMember;

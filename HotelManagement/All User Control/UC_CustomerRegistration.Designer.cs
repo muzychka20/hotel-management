@@ -38,8 +38,8 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
-			this.cmdNationality = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.cmdGender = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.cmbNationality = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.cmbGender = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.dtBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,12 +55,12 @@
 			this.label12 = new System.Windows.Forms.Label();
 			this.cmbApartment = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label13 = new System.Windows.Forms.Label();
-			this.btnAddCustomer = new Guna.UI2.WinForms.Guna2Button();
-			this.cmdBed = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.btnAlloteRoom = new Guna.UI2.WinForms.Guna2Button();
+			this.cmbBed = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label14 = new System.Windows.Forms.Label();
-			this.cmdRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.cmbRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label15 = new System.Windows.Forms.Label();
-			this.cmdRoom = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.cmbRoom = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -173,37 +173,37 @@
 			this.txtPhone.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtPhone.TabIndex = 11;
 			// 
-			// cmdNationality
+			// cmbNationality
 			// 
-			this.cmdNationality.BackColor = System.Drawing.Color.Transparent;
-			this.cmdNationality.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmdNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdNationality.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdNationality.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmdNationality.ForeColor = System.Drawing.Color.Black;
-			this.cmdNationality.ItemHeight = 30;
-			this.cmdNationality.Location = new System.Drawing.Point(73, 341);
-			this.cmdNationality.Name = "cmdNationality";
-			this.cmdNationality.Size = new System.Drawing.Size(433, 36);
-			this.cmdNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmdNationality.TabIndex = 12;
+			this.cmbNationality.BackColor = System.Drawing.Color.Transparent;
+			this.cmbNationality.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cmbNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbNationality.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbNationality.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.cmbNationality.ForeColor = System.Drawing.Color.Black;
+			this.cmbNationality.ItemHeight = 30;
+			this.cmbNationality.Location = new System.Drawing.Point(73, 341);
+			this.cmbNationality.Name = "cmbNationality";
+			this.cmbNationality.Size = new System.Drawing.Size(433, 36);
+			this.cmbNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.cmbNationality.TabIndex = 12;
 			// 
-			// cmdGender
+			// cmbGender
 			// 
-			this.cmdGender.BackColor = System.Drawing.Color.Transparent;
-			this.cmdGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmdGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdGender.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmdGender.ForeColor = System.Drawing.Color.Black;
-			this.cmdGender.ItemHeight = 30;
-			this.cmdGender.Location = new System.Drawing.Point(73, 439);
-			this.cmdGender.Name = "cmdGender";
-			this.cmdGender.Size = new System.Drawing.Size(433, 36);
-			this.cmdGender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmdGender.TabIndex = 13;
+			this.cmbGender.BackColor = System.Drawing.Color.Transparent;
+			this.cmbGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.cmbGender.ForeColor = System.Drawing.Color.Black;
+			this.cmbGender.ItemHeight = 30;
+			this.cmbGender.Location = new System.Drawing.Point(73, 439);
+			this.cmbGender.Name = "cmbGender";
+			this.cmbGender.Size = new System.Drawing.Size(433, 36);
+			this.cmbGender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.cmbGender.TabIndex = 13;
 			// 
 			// dtBirth
 			// 
@@ -224,7 +224,7 @@
 			this.dtBirth.Size = new System.Drawing.Size(433, 36);
 			this.dtBirth.TabIndex = 14;
 			this.dtBirth.UseTransparentBackground = true;
-			this.dtBirth.Value = new System.DateTime(2025, 4, 20, 12, 28, 31, 719);
+			this.dtBirth.Value = new System.DateTime(2025, 4, 21, 20, 56, 32, 515);
 			// 
 			// label1
 			// 
@@ -303,6 +303,7 @@
 			this.cmbCountry.Size = new System.Drawing.Size(433, 36);
 			this.cmbCountry.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbCountry.TabIndex = 20;
+			this.cmbCountry.SelectedIndexChanged += new System.EventHandler(this.cmbCountry_SelectedIndexChanged);
 			// 
 			// label9
 			// 
@@ -329,6 +330,7 @@
 			this.cmbCity.Size = new System.Drawing.Size(433, 36);
 			this.cmbCity.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbCity.TabIndex = 22;
+			this.cmbCity.SelectedIndexChanged += new System.EventHandler(this.cmbCity_SelectedIndexChanged);
 			// 
 			// label10
 			// 
@@ -355,6 +357,7 @@
 			this.cmbStreet.Size = new System.Drawing.Size(433, 36);
 			this.cmbStreet.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbStreet.TabIndex = 24;
+			this.cmbStreet.SelectedIndexChanged += new System.EventHandler(this.cmbStreet_SelectedIndexChanged);
 			// 
 			// label11
 			// 
@@ -381,6 +384,7 @@
 			this.cmbHouse.Size = new System.Drawing.Size(433, 36);
 			this.cmbHouse.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbHouse.TabIndex = 26;
+			this.cmbHouse.SelectedIndexChanged += new System.EventHandler(this.cmbHouse_SelectedIndexChanged);
 			// 
 			// label12
 			// 
@@ -418,102 +422,104 @@
 			this.label13.TabIndex = 27;
 			this.label13.Text = "Apartment";
 			// 
-			// btnAddCustomer
+			// btnAlloteRoom
 			// 
-			this.btnAddCustomer.BorderRadius = 18;
-			this.btnAddCustomer.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-			this.btnAddCustomer.BorderThickness = 1;
-			this.btnAddCustomer.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-			this.btnAddCustomer.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
-			this.btnAddCustomer.CheckedState.ForeColor = System.Drawing.Color.White;
-			this.btnAddCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnAddCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnAddCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnAddCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnAddCustomer.FillColor = System.Drawing.Color.White;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.Black;
-			this.btnAddCustomer.Location = new System.Drawing.Point(1342, 536);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(199, 48);
-			this.btnAddCustomer.TabIndex = 29;
-			this.btnAddCustomer.Text = "Add Customer";
+			this.btnAlloteRoom.BorderRadius = 18;
+			this.btnAlloteRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+			this.btnAlloteRoom.BorderThickness = 1;
+			this.btnAlloteRoom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
+			this.btnAlloteRoom.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+			this.btnAlloteRoom.CheckedState.ForeColor = System.Drawing.Color.White;
+			this.btnAlloteRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnAlloteRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnAlloteRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnAlloteRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnAlloteRoom.FillColor = System.Drawing.Color.White;
+			this.btnAlloteRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAlloteRoom.ForeColor = System.Drawing.Color.Black;
+			this.btnAlloteRoom.Location = new System.Drawing.Point(1342, 536);
+			this.btnAlloteRoom.Name = "btnAlloteRoom";
+			this.btnAlloteRoom.Size = new System.Drawing.Size(199, 48);
+			this.btnAlloteRoom.TabIndex = 29;
+			this.btnAlloteRoom.Text = "Allote Room";
+			this.btnAlloteRoom.Click += new System.EventHandler(this.btnAlloteRoom_Click);
 			// 
-			// cmdBed
+			// cmbBed
 			// 
-			this.cmdBed.BackColor = System.Drawing.Color.Transparent;
-			this.cmdBed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmdBed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdBed.Enabled = false;
-			this.cmdBed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdBed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdBed.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmdBed.ForeColor = System.Drawing.Color.Black;
-			this.cmdBed.ItemHeight = 30;
-			this.cmdBed.Location = new System.Drawing.Point(1108, 439);
-			this.cmdBed.Name = "cmdBed";
-			this.cmdBed.Size = new System.Drawing.Size(199, 36);
-			this.cmdBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmdBed.TabIndex = 31;
+			this.cmbBed.BackColor = System.Drawing.Color.Transparent;
+			this.cmbBed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cmbBed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbBed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbBed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbBed.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.cmbBed.ForeColor = System.Drawing.Color.Black;
+			this.cmbBed.ItemHeight = 30;
+			this.cmbBed.Location = new System.Drawing.Point(1108, 341);
+			this.cmbBed.Name = "cmbBed";
+			this.cmbBed.Size = new System.Drawing.Size(199, 36);
+			this.cmbBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.cmbBed.TabIndex = 31;
+			this.cmbBed.SelectedIndexChanged += new System.EventHandler(this.cmbBed_SelectedIndexChanged);
 			// 
 			// label14
 			// 
 			this.label14.AutoSize = true;
 			this.label14.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(1104, 415);
+			this.label14.Location = new System.Drawing.Point(1104, 317);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(44, 21);
 			this.label14.TabIndex = 30;
 			this.label14.Text = "Bed";
 			// 
-			// cmdRoomType
+			// cmbRoomType
 			// 
-			this.cmdRoomType.BackColor = System.Drawing.Color.Transparent;
-			this.cmdRoomType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmdRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdRoomType.Enabled = false;
-			this.cmdRoomType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdRoomType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdRoomType.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmdRoomType.ForeColor = System.Drawing.Color.Black;
-			this.cmdRoomType.ItemHeight = 30;
-			this.cmdRoomType.Location = new System.Drawing.Point(1342, 439);
-			this.cmdRoomType.Name = "cmdRoomType";
-			this.cmdRoomType.Size = new System.Drawing.Size(199, 36);
-			this.cmdRoomType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmdRoomType.TabIndex = 33;
+			this.cmbRoomType.BackColor = System.Drawing.Color.Transparent;
+			this.cmbRoomType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cmbRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbRoomType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbRoomType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbRoomType.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.cmbRoomType.ForeColor = System.Drawing.Color.Black;
+			this.cmbRoomType.ItemHeight = 30;
+			this.cmbRoomType.Location = new System.Drawing.Point(1342, 341);
+			this.cmbRoomType.Name = "cmbRoomType";
+			this.cmbRoomType.Size = new System.Drawing.Size(199, 36);
+			this.cmbRoomType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.cmbRoomType.TabIndex = 33;
+			this.cmbRoomType.SelectedIndexChanged += new System.EventHandler(this.cmbRoomType_SelectedIndexChanged);
 			// 
 			// label15
 			// 
 			this.label15.AutoSize = true;
 			this.label15.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(1338, 415);
+			this.label15.Location = new System.Drawing.Point(1338, 317);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(110, 21);
 			this.label15.TabIndex = 32;
 			this.label15.Text = "Room Type";
 			// 
-			// cmdRoom
+			// cmbRoom
 			// 
-			this.cmdRoom.BackColor = System.Drawing.Color.Transparent;
-			this.cmdRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmdRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdRoom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmdRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmdRoom.ForeColor = System.Drawing.Color.Black;
-			this.cmdRoom.ItemHeight = 30;
-			this.cmdRoom.Location = new System.Drawing.Point(1108, 341);
-			this.cmdRoom.Name = "cmdRoom";
-			this.cmdRoom.Size = new System.Drawing.Size(433, 36);
-			this.cmdRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmdRoom.TabIndex = 35;
+			this.cmbRoom.BackColor = System.Drawing.Color.Transparent;
+			this.cmbRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cmbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbRoom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cmbRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.cmbRoom.ForeColor = System.Drawing.Color.Black;
+			this.cmbRoom.ItemHeight = 30;
+			this.cmbRoom.Location = new System.Drawing.Point(1108, 439);
+			this.cmbRoom.Name = "cmbRoom";
+			this.cmbRoom.Size = new System.Drawing.Size(433, 36);
+			this.cmbRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.cmbRoom.TabIndex = 35;
+			this.cmbRoom.SelectedIndexChanged += new System.EventHandler(this.cmbRoom_SelectedIndexChanged);
 			// 
 			// label16
 			// 
 			this.label16.AutoSize = true;
 			this.label16.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(1104, 317);
+			this.label16.Location = new System.Drawing.Point(1104, 415);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(92, 21);
 			this.label16.TabIndex = 34;
@@ -558,13 +564,13 @@
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.txtPrice);
 			this.Controls.Add(this.label17);
-			this.Controls.Add(this.cmdRoom);
+			this.Controls.Add(this.cmbRoom);
 			this.Controls.Add(this.label16);
-			this.Controls.Add(this.cmdRoomType);
+			this.Controls.Add(this.cmbRoomType);
 			this.Controls.Add(this.label15);
-			this.Controls.Add(this.cmdBed);
+			this.Controls.Add(this.cmbBed);
 			this.Controls.Add(this.label14);
-			this.Controls.Add(this.btnAddCustomer);
+			this.Controls.Add(this.btnAlloteRoom);
 			this.Controls.Add(this.cmbApartment);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.cmbHouse);
@@ -580,8 +586,8 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.txtID);
 			this.Controls.Add(this.dtBirth);
-			this.Controls.Add(this.cmdGender);
-			this.Controls.Add(this.cmdNationality);
+			this.Controls.Add(this.cmbGender);
+			this.Controls.Add(this.cmbNationality);
 			this.Controls.Add(this.txtPhone);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
@@ -592,6 +598,8 @@
 			this.Controls.Add(this.txtName);
 			this.Name = "UC_CustomerRegistration";
 			this.Size = new System.Drawing.Size(2024, 814);
+			this.Load += new System.EventHandler(this.UC_CustomerRegistration_Load);
+			this.Leave += new System.EventHandler(this.UC_CustomerRegistration_Leave);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -608,8 +616,8 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
 		private Guna.UI2.WinForms.Guna2TextBox txtName;
-		private Guna.UI2.WinForms.Guna2ComboBox cmdGender;
-		private Guna.UI2.WinForms.Guna2ComboBox cmdNationality;
+		private Guna.UI2.WinForms.Guna2ComboBox cmbGender;
+		private Guna.UI2.WinForms.Guna2ComboBox cmbNationality;
 		private Guna.UI2.WinForms.Guna2DateTimePicker dtBirth;
 		private System.Windows.Forms.Label label1;
 		private Guna.UI2.WinForms.Guna2TextBox txtID;
@@ -625,14 +633,14 @@
 		private System.Windows.Forms.Label label13;
 		private Guna.UI2.WinForms.Guna2ComboBox cmbHouse;
 		private System.Windows.Forms.Label label12;
-		private Guna.UI2.WinForms.Guna2Button btnAddCustomer;
+		private Guna.UI2.WinForms.Guna2Button btnAlloteRoom;
 		private Guna.UI2.WinForms.Guna2TextBox txtPrice;
 		private System.Windows.Forms.Label label17;
-		private Guna.UI2.WinForms.Guna2ComboBox cmdRoom;
+		private Guna.UI2.WinForms.Guna2ComboBox cmbRoom;
 		private System.Windows.Forms.Label label16;
-		private Guna.UI2.WinForms.Guna2ComboBox cmdRoomType;
+		private Guna.UI2.WinForms.Guna2ComboBox cmbRoomType;
 		private System.Windows.Forms.Label label15;
-		private Guna.UI2.WinForms.Guna2ComboBox cmdBed;
+		private Guna.UI2.WinForms.Guna2ComboBox cmbBed;
 		private System.Windows.Forms.Label label14;
 	}
 }
