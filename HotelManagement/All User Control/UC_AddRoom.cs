@@ -14,6 +14,7 @@ namespace HotelManagement.All_User_Control
 	public partial class UC_AddRoom : UserControl
 	{
 		DatabaseHelper databaseHelper = new DatabaseHelper();
+		Utils utils = new Utils();
 		String query;
 
 		public UC_AddRoom()
@@ -23,17 +24,8 @@ namespace HotelManagement.All_User_Control
 
 		private void LoadComboBoxes()
 		{
-			DataTable roomTypes = databaseHelper.GetTable("exec ui_GetRoomTypes");
-			txtType.DataSource = roomTypes;
-			txtType.DisplayMember = "name";
-			txtType.ValueMember = "id";
-			txtType.SelectedIndex = -1;
-
-			DataTable bedTypes = databaseHelper.GetTable("exec ui_GetBedTypes");
-			txtBed.DataSource = bedTypes;
-			txtBed.DisplayMember = "name";
-			txtBed.ValueMember = "id";
-			txtBed.SelectedIndex = -1;
+			utils.LoadComboBox(txtType, "exec ui_GetRoomTypes", "name", "id");
+			utils.LoadComboBox(txtBed, "exec ui_GetBedTypes", "name", "id");
 		}
 
 		private void UC_AddRoom_Load(object sender, EventArgs e)
