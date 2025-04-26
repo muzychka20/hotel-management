@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManagement.All_User_Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,8 @@ namespace HotelManagement
 		{
 			MovingPanel.Left = btnCheckOut.Left + 15;
 			MovingPanel.Width = btnCheckOut.Width - 30;
+			uC_CustomerCheckOut1.Visible = true;
+			uC_CustomerCheckOut1.BringToFront();
 		}
 
 		private void btnCustomerDetail_Click(object sender, EventArgs e)
