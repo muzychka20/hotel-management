@@ -40,8 +40,8 @@
 			this.dtCheckOut = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label7 = new System.Windows.Forms.Label();
 			this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
-			this.cmbRoom = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.cmbCustomerName = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtRoom = new Guna.UI2.WinForms.Guna2TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridCustomerCheckOut)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -122,6 +122,7 @@
 			this.dataGridCustomerCheckOut.ThemeStyle.RowsStyle.Height = 22;
 			this.dataGridCustomerCheckOut.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.dataGridCustomerCheckOut.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.dataGridCustomerCheckOut.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridCustomerCheckOut_CellClick);
 			// 
 			// label1
 			// 
@@ -188,48 +189,59 @@
 			this.btnCheckOut.Size = new System.Drawing.Size(179, 39);
 			this.btnCheckOut.TabIndex = 30;
 			this.btnCheckOut.Text = "Check Out";
+			this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
 			// 
-			// cmbRoom
+			// txtName
 			// 
-			this.cmbRoom.BackColor = System.Drawing.Color.Transparent;
-			this.cmbRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbRoom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmbRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmbRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmbRoom.ForeColor = System.Drawing.Color.Black;
-			this.cmbRoom.ItemHeight = 30;
-			this.cmbRoom.Location = new System.Drawing.Point(385, 464);
-			this.cmbRoom.Margin = new System.Windows.Forms.Padding(2);
-			this.cmbRoom.Name = "cmbRoom";
-			this.cmbRoom.Size = new System.Drawing.Size(287, 36);
-			this.cmbRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmbRoom.TabIndex = 36;
+			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtName.DefaultText = "";
+			this.txtName.DisabledState.BorderColor = System.Drawing.Color.Silver;
+			this.txtName.DisabledState.FillColor = System.Drawing.Color.White;
+			this.txtName.DisabledState.ForeColor = System.Drawing.Color.Black;
+			this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.Silver;
+			this.txtName.Enabled = false;
+			this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.txtName.ForeColor = System.Drawing.Color.Black;
+			this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtName.Location = new System.Drawing.Point(56, 463);
+			this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txtName.Name = "txtName";
+			this.txtName.PlaceholderText = "Customer Name";
+			this.txtName.SelectedText = "";
+			this.txtName.Size = new System.Drawing.Size(265, 37);
+			this.txtName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.txtName.TabIndex = 37;
 			// 
-			// cmbCustomerName
+			// txtRoom
 			// 
-			this.cmbCustomerName.BackColor = System.Drawing.Color.Transparent;
-			this.cmbCustomerName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cmbCustomerName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbCustomerName.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmbCustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cmbCustomerName.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-			this.cmbCustomerName.ForeColor = System.Drawing.Color.Black;
-			this.cmbCustomerName.ItemHeight = 30;
-			this.cmbCustomerName.Location = new System.Drawing.Point(56, 464);
-			this.cmbCustomerName.Margin = new System.Windows.Forms.Padding(2);
-			this.cmbCustomerName.Name = "cmbCustomerName";
-			this.cmbCustomerName.Size = new System.Drawing.Size(287, 36);
-			this.cmbCustomerName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-			this.cmbCustomerName.TabIndex = 37;
+			this.txtRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtRoom.DefaultText = "";
+			this.txtRoom.DisabledState.BorderColor = System.Drawing.Color.Silver;
+			this.txtRoom.DisabledState.FillColor = System.Drawing.Color.White;
+			this.txtRoom.DisabledState.ForeColor = System.Drawing.Color.Black;
+			this.txtRoom.DisabledState.PlaceholderForeColor = System.Drawing.Color.Silver;
+			this.txtRoom.Enabled = false;
+			this.txtRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+			this.txtRoom.ForeColor = System.Drawing.Color.Black;
+			this.txtRoom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtRoom.Location = new System.Drawing.Point(385, 463);
+			this.txtRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.txtRoom.Name = "txtRoom";
+			this.txtRoom.PlaceholderText = "Room No";
+			this.txtRoom.SelectedText = "";
+			this.txtRoom.Size = new System.Drawing.Size(265, 37);
+			this.txtRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+			this.txtRoom.TabIndex = 38;
 			// 
 			// UC_CustomerCheckOut
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.Controls.Add(this.cmbCustomerName);
-			this.Controls.Add(this.cmbRoom);
+			this.Controls.Add(this.txtRoom);
+			this.Controls.Add(this.txtName);
 			this.Controls.Add(this.btnCheckOut);
 			this.Controls.Add(this.dtCheckOut);
 			this.Controls.Add(this.label7);
@@ -256,7 +268,7 @@
 		private Guna.UI2.WinForms.Guna2DateTimePicker dtCheckOut;
 		private System.Windows.Forms.Label label7;
 		private Guna.UI2.WinForms.Guna2Button btnCheckOut;
-		private Guna.UI2.WinForms.Guna2ComboBox cmbRoom;
-		private Guna.UI2.WinForms.Guna2ComboBox cmbCustomerName;
+		private Guna.UI2.WinForms.Guna2TextBox txtRoom;
+		private Guna.UI2.WinForms.Guna2TextBox txtName;
 	}
 }

@@ -131,7 +131,6 @@ namespace HotelManagement.All_User_Control
 				}
 				else
 				{
-					Console.WriteLine("false");
 					txtPrice.Text = "";
 				}
 			}
@@ -193,7 +192,7 @@ namespace HotelManagement.All_User_Control
 					{ "@room_id", cmbRoom.SelectedValue }
 				};
 
-				databaseHelper.ExecuteStoredProcedure("InsertCustomer", parameters);
+				databaseHelper.ExecuteStoredProcedure("InsertCustomerVisit", parameters);
 
 				MessageBox.Show("Customer registered successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				ClearForm();

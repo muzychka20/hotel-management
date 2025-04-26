@@ -75,9 +75,10 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(66, 34);
+			this.label2.Location = new System.Drawing.Point(50, 28);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(364, 40);
+			this.label2.Size = new System.Drawing.Size(304, 33);
 			this.label2.TabIndex = 5;
 			this.label2.Text = "Customer Registration";
 			// 
@@ -85,9 +86,10 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(69, 116);
+			this.label3.Location = new System.Drawing.Point(52, 94);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(64, 21);
+			this.label3.Size = new System.Drawing.Size(53, 20);
 			this.label3.TabIndex = 6;
 			this.label3.Text = "Name";
 			// 
@@ -95,9 +97,10 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(69, 205);
+			this.label4.Location = new System.Drawing.Point(52, 167);
+			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(67, 21);
+			this.label4.Size = new System.Drawing.Size(56, 20);
 			this.label4.TabIndex = 7;
 			this.label4.Text = "Phone";
 			// 
@@ -105,9 +108,10 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(69, 317);
+			this.label5.Location = new System.Drawing.Point(52, 258);
+			this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(104, 21);
+			this.label5.Size = new System.Drawing.Size(86, 20);
 			this.label5.TabIndex = 8;
 			this.label5.Text = "Nationality";
 			// 
@@ -115,9 +119,10 @@
 			// 
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(69, 415);
+			this.label6.Location = new System.Drawing.Point(52, 337);
+			this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(78, 21);
+			this.label6.Size = new System.Drawing.Size(66, 20);
 			this.label6.TabIndex = 9;
 			this.label6.Text = "Gender";
 			// 
@@ -125,9 +130,10 @@
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(69, 514);
+			this.label7.Location = new System.Drawing.Point(52, 418);
+			this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(118, 21);
+			this.label7.Size = new System.Drawing.Size(99, 20);
 			this.label7.TabIndex = 10;
 			this.label7.Text = "Date of Birth";
 			// 
@@ -143,12 +149,12 @@
 			this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtName.ForeColor = System.Drawing.Color.Black;
 			this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtName.Location = new System.Drawing.Point(73, 142);
-			this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtName.Location = new System.Drawing.Point(55, 115);
+			this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtName.Name = "txtName";
 			this.txtName.PlaceholderText = "Enter Full Name";
 			this.txtName.SelectedText = "";
-			this.txtName.Size = new System.Drawing.Size(433, 45);
+			this.txtName.Size = new System.Drawing.Size(325, 37);
 			this.txtName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtName.TabIndex = 4;
 			// 
@@ -164,12 +170,12 @@
 			this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtPhone.ForeColor = System.Drawing.Color.Black;
 			this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtPhone.Location = new System.Drawing.Point(73, 231);
-			this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtPhone.Location = new System.Drawing.Point(55, 188);
+			this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtPhone.Name = "txtPhone";
 			this.txtPhone.PlaceholderText = "Enter Contact Phone";
 			this.txtPhone.SelectedText = "";
-			this.txtPhone.Size = new System.Drawing.Size(433, 45);
+			this.txtPhone.Size = new System.Drawing.Size(325, 37);
 			this.txtPhone.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtPhone.TabIndex = 11;
 			// 
@@ -183,9 +189,10 @@
 			this.cmbNationality.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbNationality.ForeColor = System.Drawing.Color.Black;
 			this.cmbNationality.ItemHeight = 30;
-			this.cmbNationality.Location = new System.Drawing.Point(73, 341);
+			this.cmbNationality.Location = new System.Drawing.Point(55, 277);
+			this.cmbNationality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbNationality.Name = "cmbNationality";
-			this.cmbNationality.Size = new System.Drawing.Size(433, 36);
+			this.cmbNationality.Size = new System.Drawing.Size(326, 36);
 			this.cmbNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbNationality.TabIndex = 12;
 			// 
@@ -199,9 +206,10 @@
 			this.cmbGender.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbGender.ForeColor = System.Drawing.Color.Black;
 			this.cmbGender.ItemHeight = 30;
-			this.cmbGender.Location = new System.Drawing.Point(73, 439);
+			this.cmbGender.Location = new System.Drawing.Point(55, 357);
+			this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbGender.Name = "cmbGender";
-			this.cmbGender.Size = new System.Drawing.Size(433, 36);
+			this.cmbGender.Size = new System.Drawing.Size(326, 36);
 			this.cmbGender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbGender.TabIndex = 13;
 			// 
@@ -217,11 +225,12 @@
 			this.dtBirth.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.dtBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtBirth.IndicateFocus = true;
-			this.dtBirth.Location = new System.Drawing.Point(73, 548);
+			this.dtBirth.Location = new System.Drawing.Point(55, 445);
+			this.dtBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.dtBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
 			this.dtBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
 			this.dtBirth.Name = "dtBirth";
-			this.dtBirth.Size = new System.Drawing.Size(433, 36);
+			this.dtBirth.Size = new System.Drawing.Size(325, 29);
 			this.dtBirth.TabIndex = 14;
 			this.dtBirth.UseTransparentBackground = true;
 			this.dtBirth.Value = new System.DateTime(2025, 4, 21, 20, 56, 32, 515);
@@ -230,9 +239,10 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(1104, 116);
+			this.label1.Location = new System.Drawing.Point(828, 94);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(28, 21);
+			this.label1.Size = new System.Drawing.Size(25, 20);
 			this.label1.TabIndex = 16;
 			this.label1.Text = "ID";
 			// 
@@ -248,12 +258,12 @@
 			this.txtID.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtID.ForeColor = System.Drawing.Color.Black;
 			this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtID.Location = new System.Drawing.Point(1108, 142);
-			this.txtID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtID.Location = new System.Drawing.Point(831, 115);
+			this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtID.Name = "txtID";
 			this.txtID.PlaceholderText = "Enter ID";
 			this.txtID.SelectedText = "";
-			this.txtID.Size = new System.Drawing.Size(433, 45);
+			this.txtID.Size = new System.Drawing.Size(325, 37);
 			this.txtID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtID.TabIndex = 15;
 			// 
@@ -269,11 +279,12 @@
 			this.dtCheckIn.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.dtCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtCheckIn.IndicateFocus = true;
-			this.dtCheckIn.Location = new System.Drawing.Point(1108, 240);
+			this.dtCheckIn.Location = new System.Drawing.Point(831, 195);
+			this.dtCheckIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.dtCheckIn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
 			this.dtCheckIn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
 			this.dtCheckIn.Name = "dtCheckIn";
-			this.dtCheckIn.Size = new System.Drawing.Size(433, 36);
+			this.dtCheckIn.Size = new System.Drawing.Size(325, 29);
 			this.dtCheckIn.TabIndex = 18;
 			this.dtCheckIn.UseTransparentBackground = true;
 			this.dtCheckIn.Value = new System.DateTime(2025, 4, 20, 11, 56, 37, 197);
@@ -282,9 +293,10 @@
 			// 
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(1104, 205);
+			this.label8.Location = new System.Drawing.Point(828, 167);
+			this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(90, 21);
+			this.label8.Size = new System.Drawing.Size(76, 20);
 			this.label8.TabIndex = 17;
 			this.label8.Text = "Check In";
 			// 
@@ -298,9 +310,10 @@
 			this.cmbCountry.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbCountry.ForeColor = System.Drawing.Color.Black;
 			this.cmbCountry.ItemHeight = 30;
-			this.cmbCountry.Location = new System.Drawing.Point(589, 145);
+			this.cmbCountry.Location = new System.Drawing.Point(442, 118);
+			this.cmbCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbCountry.Name = "cmbCountry";
-			this.cmbCountry.Size = new System.Drawing.Size(433, 36);
+			this.cmbCountry.Size = new System.Drawing.Size(326, 36);
 			this.cmbCountry.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbCountry.TabIndex = 20;
 			this.cmbCountry.SelectedIndexChanged += new System.EventHandler(this.cmbCountry_SelectedIndexChanged);
@@ -309,9 +322,10 @@
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(585, 121);
+			this.label9.Location = new System.Drawing.Point(439, 98);
+			this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(82, 21);
+			this.label9.Size = new System.Drawing.Size(67, 20);
 			this.label9.TabIndex = 19;
 			this.label9.Text = "Country";
 			// 
@@ -325,9 +339,10 @@
 			this.cmbCity.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbCity.ForeColor = System.Drawing.Color.Black;
 			this.cmbCity.ItemHeight = 30;
-			this.cmbCity.Location = new System.Drawing.Point(589, 231);
+			this.cmbCity.Location = new System.Drawing.Point(442, 188);
+			this.cmbCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbCity.Name = "cmbCity";
-			this.cmbCity.Size = new System.Drawing.Size(433, 36);
+			this.cmbCity.Size = new System.Drawing.Size(326, 36);
 			this.cmbCity.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbCity.TabIndex = 22;
 			this.cmbCity.SelectedIndexChanged += new System.EventHandler(this.cmbCity_SelectedIndexChanged);
@@ -336,9 +351,10 @@
 			// 
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(585, 205);
+			this.label10.Location = new System.Drawing.Point(439, 167);
+			this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(46, 21);
+			this.label10.Size = new System.Drawing.Size(37, 20);
 			this.label10.TabIndex = 21;
 			this.label10.Text = "City";
 			// 
@@ -352,9 +368,10 @@
 			this.cmbStreet.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbStreet.ForeColor = System.Drawing.Color.Black;
 			this.cmbStreet.ItemHeight = 30;
-			this.cmbStreet.Location = new System.Drawing.Point(589, 341);
+			this.cmbStreet.Location = new System.Drawing.Point(442, 277);
+			this.cmbStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbStreet.Name = "cmbStreet";
-			this.cmbStreet.Size = new System.Drawing.Size(433, 36);
+			this.cmbStreet.Size = new System.Drawing.Size(326, 36);
 			this.cmbStreet.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbStreet.TabIndex = 24;
 			this.cmbStreet.SelectedIndexChanged += new System.EventHandler(this.cmbStreet_SelectedIndexChanged);
@@ -363,9 +380,10 @@
 			// 
 			this.label11.AutoSize = true;
 			this.label11.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(585, 317);
+			this.label11.Location = new System.Drawing.Point(439, 258);
+			this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(62, 21);
+			this.label11.Size = new System.Drawing.Size(51, 20);
 			this.label11.TabIndex = 23;
 			this.label11.Text = "Street";
 			// 
@@ -379,9 +397,10 @@
 			this.cmbHouse.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbHouse.ForeColor = System.Drawing.Color.Black;
 			this.cmbHouse.ItemHeight = 30;
-			this.cmbHouse.Location = new System.Drawing.Point(589, 439);
+			this.cmbHouse.Location = new System.Drawing.Point(442, 357);
+			this.cmbHouse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbHouse.Name = "cmbHouse";
-			this.cmbHouse.Size = new System.Drawing.Size(433, 36);
+			this.cmbHouse.Size = new System.Drawing.Size(326, 36);
 			this.cmbHouse.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbHouse.TabIndex = 26;
 			this.cmbHouse.SelectedIndexChanged += new System.EventHandler(this.cmbHouse_SelectedIndexChanged);
@@ -390,9 +409,10 @@
 			// 
 			this.label12.AutoSize = true;
 			this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(585, 415);
+			this.label12.Location = new System.Drawing.Point(439, 337);
+			this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(64, 21);
+			this.label12.Size = new System.Drawing.Size(54, 20);
 			this.label12.TabIndex = 25;
 			this.label12.Text = "House";
 			// 
@@ -406,9 +426,10 @@
 			this.cmbApartment.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbApartment.ForeColor = System.Drawing.Color.Black;
 			this.cmbApartment.ItemHeight = 30;
-			this.cmbApartment.Location = new System.Drawing.Point(589, 548);
+			this.cmbApartment.Location = new System.Drawing.Point(442, 445);
+			this.cmbApartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbApartment.Name = "cmbApartment";
-			this.cmbApartment.Size = new System.Drawing.Size(433, 36);
+			this.cmbApartment.Size = new System.Drawing.Size(326, 36);
 			this.cmbApartment.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbApartment.TabIndex = 28;
 			// 
@@ -416,9 +437,10 @@
 			// 
 			this.label13.AutoSize = true;
 			this.label13.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(585, 514);
+			this.label13.Location = new System.Drawing.Point(439, 418);
+			this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(108, 21);
+			this.label13.Size = new System.Drawing.Size(87, 20);
 			this.label13.TabIndex = 27;
 			this.label13.Text = "Apartment";
 			// 
@@ -437,9 +459,10 @@
 			this.btnAlloteRoom.FillColor = System.Drawing.Color.White;
 			this.btnAlloteRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAlloteRoom.ForeColor = System.Drawing.Color.Black;
-			this.btnAlloteRoom.Location = new System.Drawing.Point(1342, 536);
+			this.btnAlloteRoom.Location = new System.Drawing.Point(1006, 436);
+			this.btnAlloteRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnAlloteRoom.Name = "btnAlloteRoom";
-			this.btnAlloteRoom.Size = new System.Drawing.Size(199, 48);
+			this.btnAlloteRoom.Size = new System.Drawing.Size(149, 39);
 			this.btnAlloteRoom.TabIndex = 29;
 			this.btnAlloteRoom.Text = "Allote Room";
 			this.btnAlloteRoom.Click += new System.EventHandler(this.btnAlloteRoom_Click);
@@ -454,9 +477,10 @@
 			this.cmbBed.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbBed.ForeColor = System.Drawing.Color.Black;
 			this.cmbBed.ItemHeight = 30;
-			this.cmbBed.Location = new System.Drawing.Point(1108, 341);
+			this.cmbBed.Location = new System.Drawing.Point(831, 277);
+			this.cmbBed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbBed.Name = "cmbBed";
-			this.cmbBed.Size = new System.Drawing.Size(199, 36);
+			this.cmbBed.Size = new System.Drawing.Size(150, 36);
 			this.cmbBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbBed.TabIndex = 31;
 			this.cmbBed.SelectedIndexChanged += new System.EventHandler(this.cmbBed_SelectedIndexChanged);
@@ -465,9 +489,10 @@
 			// 
 			this.label14.AutoSize = true;
 			this.label14.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(1104, 317);
+			this.label14.Location = new System.Drawing.Point(828, 258);
+			this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(44, 21);
+			this.label14.Size = new System.Drawing.Size(38, 20);
 			this.label14.TabIndex = 30;
 			this.label14.Text = "Bed";
 			// 
@@ -481,9 +506,10 @@
 			this.cmbRoomType.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbRoomType.ForeColor = System.Drawing.Color.Black;
 			this.cmbRoomType.ItemHeight = 30;
-			this.cmbRoomType.Location = new System.Drawing.Point(1342, 341);
+			this.cmbRoomType.Location = new System.Drawing.Point(1006, 277);
+			this.cmbRoomType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbRoomType.Name = "cmbRoomType";
-			this.cmbRoomType.Size = new System.Drawing.Size(199, 36);
+			this.cmbRoomType.Size = new System.Drawing.Size(150, 36);
 			this.cmbRoomType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbRoomType.TabIndex = 33;
 			this.cmbRoomType.SelectedIndexChanged += new System.EventHandler(this.cmbRoomType_SelectedIndexChanged);
@@ -492,9 +518,10 @@
 			// 
 			this.label15.AutoSize = true;
 			this.label15.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(1338, 317);
+			this.label15.Location = new System.Drawing.Point(1004, 258);
+			this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(110, 21);
+			this.label15.Size = new System.Drawing.Size(88, 20);
 			this.label15.TabIndex = 32;
 			this.label15.Text = "Room Type";
 			// 
@@ -508,9 +535,10 @@
 			this.cmbRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.cmbRoom.ForeColor = System.Drawing.Color.Black;
 			this.cmbRoom.ItemHeight = 30;
-			this.cmbRoom.Location = new System.Drawing.Point(1108, 439);
+			this.cmbRoom.Location = new System.Drawing.Point(831, 357);
+			this.cmbRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.cmbRoom.Name = "cmbRoom";
-			this.cmbRoom.Size = new System.Drawing.Size(433, 36);
+			this.cmbRoom.Size = new System.Drawing.Size(326, 36);
 			this.cmbRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.cmbRoom.TabIndex = 35;
 			this.cmbRoom.SelectedIndexChanged += new System.EventHandler(this.cmbRoom_SelectedIndexChanged);
@@ -519,9 +547,10 @@
 			// 
 			this.label16.AutoSize = true;
 			this.label16.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(1104, 415);
+			this.label16.Location = new System.Drawing.Point(828, 337);
+			this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(92, 21);
+			this.label16.Size = new System.Drawing.Size(76, 20);
 			this.label16.TabIndex = 34;
 			this.label16.Text = "Room No";
 			// 
@@ -529,9 +558,10 @@
 			// 
 			this.label17.AutoSize = true;
 			this.label17.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(1104, 514);
+			this.label17.Location = new System.Drawing.Point(828, 418);
+			this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(53, 21);
+			this.label17.Size = new System.Drawing.Size(46, 20);
 			this.label17.TabIndex = 36;
 			this.label17.Text = "Price";
 			// 
@@ -548,18 +578,18 @@
 			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtPrice.ForeColor = System.Drawing.Color.Black;
 			this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtPrice.Location = new System.Drawing.Point(1108, 539);
-			this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtPrice.Location = new System.Drawing.Point(831, 438);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.PlaceholderText = "";
 			this.txtPrice.SelectedText = "";
-			this.txtPrice.Size = new System.Drawing.Size(199, 45);
+			this.txtPrice.Size = new System.Drawing.Size(149, 37);
 			this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtPrice.TabIndex = 38;
 			// 
 			// UC_CustomerRegistration
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.txtPrice);
@@ -596,8 +626,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtName);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "UC_CustomerRegistration";
-			this.Size = new System.Drawing.Size(2024, 814);
+			this.Size = new System.Drawing.Size(1214, 520);
 			this.Load += new System.EventHandler(this.UC_CustomerRegistration_Load);
 			this.Leave += new System.EventHandler(this.UC_CustomerRegistration_Leave);
 			this.ResumeLayout(false);

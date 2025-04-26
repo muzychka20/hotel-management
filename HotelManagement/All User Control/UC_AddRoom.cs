@@ -33,7 +33,20 @@ namespace HotelManagement.All_User_Control
 			query = "exec ui_GetRooms";
 			DataSet ds = databaseHelper.GetData(query);
 			DataGridView1.DataSource = ds.Tables[0];
+			SetDataGridViewHeader();
 			LoadComboBoxes();
+			DataGridView1.AllowUserToAddRows = false;
+		}
+
+		private void SetDataGridViewHeader()
+		{
+			DataGridView1.Columns["id"].HeaderText = "Room ID";
+			DataGridView1.Columns["no"].HeaderText = "Room Number";
+			DataGridView1.Columns["type"].HeaderText = "Room Type";
+			DataGridView1.Columns["bed"].HeaderText = "Bed Type";
+			DataGridView1.Columns["price"].HeaderText = "Price";
+			DataGridView1.Columns["booked"].HeaderText = "Booked";
+			DataGridView1.ColumnHeadersHeight = 30;
 		}
 
 		private void btnAddRoom_Click(object sender, EventArgs e)

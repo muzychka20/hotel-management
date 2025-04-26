@@ -34,16 +34,6 @@ namespace HotelManagement
 				return dataSet;
 			}
 		}
-		
-		public void SetData(string query)
-		{
-			using (SqlConnection connection = GetConnection())
-			using (SqlCommand cmd = new SqlCommand(query, connection))
-			{
-				connection.Open();
-				cmd.ExecuteNonQuery();
-			}
-		}
 
 		public DataTable GetTable(string query, Dictionary<string, object> parameters = null)
 		{

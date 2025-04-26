@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label1 = new System.Windows.Forms.Label();
 			this.DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.label2 = new System.Windows.Forms.Label();
@@ -51,42 +51,44 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(53, 27);
+			this.label1.Location = new System.Drawing.Point(40, 22);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(271, 40);
+			this.label1.Size = new System.Drawing.Size(226, 33);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Add New Room";
 			// 
 			// DataGridView1
 			// 
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-			this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+			this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.DataGridView1.ColumnHeadersHeight = 4;
 			this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
 			this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.DataGridView1.Location = new System.Drawing.Point(60, 81);
+			this.DataGridView1.Location = new System.Drawing.Point(45, 66);
+			this.DataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.DataGridView1.Name = "DataGridView1";
 			this.DataGridView1.RowHeadersVisible = false;
 			this.DataGridView1.RowHeadersWidth = 51;
 			this.DataGridView1.RowTemplate.Height = 24;
-			this.DataGridView1.Size = new System.Drawing.Size(970, 528);
+			this.DataGridView1.Size = new System.Drawing.Size(728, 429);
 			this.DataGridView1.TabIndex = 1;
 			this.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -114,9 +116,10 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(1096, 81);
+			this.label2.Location = new System.Drawing.Point(822, 66);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(137, 21);
+			this.label2.Size = new System.Drawing.Size(113, 20);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Room Number";
 			// 
@@ -132,12 +135,12 @@
 			this.txtRoomNo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtRoomNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtRoomNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtRoomNo.Location = new System.Drawing.Point(1100, 107);
-			this.txtRoomNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtRoomNo.Location = new System.Drawing.Point(825, 87);
+			this.txtRoomNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtRoomNo.Name = "txtRoomNo";
 			this.txtRoomNo.PlaceholderText = "";
 			this.txtRoomNo.SelectedText = "";
-			this.txtRoomNo.Size = new System.Drawing.Size(433, 45);
+			this.txtRoomNo.Size = new System.Drawing.Size(325, 37);
 			this.txtRoomNo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtRoomNo.TabIndex = 3;
 			// 
@@ -145,9 +148,10 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(1096, 206);
+			this.label3.Location = new System.Drawing.Point(822, 167);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(110, 21);
+			this.label3.Size = new System.Drawing.Size(88, 20);
 			this.label3.TabIndex = 4;
 			this.label3.Text = "Room Type";
 			// 
@@ -155,9 +159,10 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(1096, 314);
+			this.label4.Location = new System.Drawing.Point(822, 255);
+			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(44, 21);
+			this.label4.Size = new System.Drawing.Size(38, 20);
 			this.label4.TabIndex = 5;
 			this.label4.Text = "Bed";
 			// 
@@ -165,9 +170,10 @@
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(1096, 431);
+			this.label5.Location = new System.Drawing.Point(822, 350);
+			this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(53, 21);
+			this.label5.Size = new System.Drawing.Size(46, 20);
 			this.label5.TabIndex = 6;
 			this.label5.Text = "Price";
 			// 
@@ -183,12 +189,12 @@
 			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtPrice.Location = new System.Drawing.Point(1100, 457);
-			this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtPrice.Location = new System.Drawing.Point(825, 371);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.PlaceholderText = "";
 			this.txtPrice.SelectedText = "";
-			this.txtPrice.Size = new System.Drawing.Size(433, 45);
+			this.txtPrice.Size = new System.Drawing.Size(325, 37);
 			this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtPrice.TabIndex = 7;
 			// 
@@ -202,9 +208,10 @@
 			this.txtType.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtType.ItemHeight = 30;
-			this.txtType.Location = new System.Drawing.Point(1100, 230);
+			this.txtType.Location = new System.Drawing.Point(825, 187);
+			this.txtType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtType.Name = "txtType";
-			this.txtType.Size = new System.Drawing.Size(433, 36);
+			this.txtType.Size = new System.Drawing.Size(326, 36);
 			this.txtType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtType.TabIndex = 8;
 			// 
@@ -218,9 +225,10 @@
 			this.txtBed.Font = new System.Drawing.Font("Segoe UI", 10.8F);
 			this.txtBed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtBed.ItemHeight = 30;
-			this.txtBed.Location = new System.Drawing.Point(1100, 338);
+			this.txtBed.Location = new System.Drawing.Point(825, 275);
+			this.txtBed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.txtBed.Name = "txtBed";
-			this.txtBed.Size = new System.Drawing.Size(433, 36);
+			this.txtBed.Size = new System.Drawing.Size(326, 36);
 			this.txtBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
 			this.txtBed.TabIndex = 9;
 			// 
@@ -239,9 +247,10 @@
 			this.btnAddRoom.FillColor = System.Drawing.Color.White;
 			this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAddRoom.ForeColor = System.Drawing.Color.Black;
-			this.btnAddRoom.Location = new System.Drawing.Point(1353, 561);
+			this.btnAddRoom.Location = new System.Drawing.Point(1015, 456);
+			this.btnAddRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.btnAddRoom.Name = "btnAddRoom";
-			this.btnAddRoom.Size = new System.Drawing.Size(180, 48);
+			this.btnAddRoom.Size = new System.Drawing.Size(135, 39);
 			this.btnAddRoom.TabIndex = 10;
 			this.btnAddRoom.Text = "Add Room";
 			this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
@@ -253,7 +262,7 @@
 			// 
 			// UC_AddRoom
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.btnAddRoom);
@@ -267,8 +276,9 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.DataGridView1);
 			this.Controls.Add(this.label1);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "UC_AddRoom";
-			this.Size = new System.Drawing.Size(2024, 814);
+			this.Size = new System.Drawing.Size(1214, 520);
 			this.Load += new System.EventHandler(this.UC_AddRoom_Load);
 			this.Enter += new System.EventHandler(this.UC_AddRoom_Enter);
 			this.Leave += new System.EventHandler(this.UC_AddRoom_Leave);
