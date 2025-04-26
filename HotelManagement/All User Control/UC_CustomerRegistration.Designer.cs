@@ -190,7 +190,7 @@
 			this.cmbNationality.ForeColor = System.Drawing.Color.Black;
 			this.cmbNationality.ItemHeight = 30;
 			this.cmbNationality.Location = new System.Drawing.Point(55, 277);
-			this.cmbNationality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbNationality.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbNationality.Name = "cmbNationality";
 			this.cmbNationality.Size = new System.Drawing.Size(326, 36);
 			this.cmbNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -207,7 +207,7 @@
 			this.cmbGender.ForeColor = System.Drawing.Color.Black;
 			this.cmbGender.ItemHeight = 30;
 			this.cmbGender.Location = new System.Drawing.Point(55, 357);
-			this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbGender.Name = "cmbGender";
 			this.cmbGender.Size = new System.Drawing.Size(326, 36);
 			this.cmbGender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -226,7 +226,7 @@
 			this.dtBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtBirth.IndicateFocus = true;
 			this.dtBirth.Location = new System.Drawing.Point(55, 445);
-			this.dtBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.dtBirth.Margin = new System.Windows.Forms.Padding(2);
 			this.dtBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
 			this.dtBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
 			this.dtBirth.Name = "dtBirth";
@@ -280,7 +280,7 @@
 			this.dtCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtCheckIn.IndicateFocus = true;
 			this.dtCheckIn.Location = new System.Drawing.Point(831, 195);
-			this.dtCheckIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.dtCheckIn.Margin = new System.Windows.Forms.Padding(2);
 			this.dtCheckIn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
 			this.dtCheckIn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
 			this.dtCheckIn.Name = "dtCheckIn";
@@ -311,7 +311,7 @@
 			this.cmbCountry.ForeColor = System.Drawing.Color.Black;
 			this.cmbCountry.ItemHeight = 30;
 			this.cmbCountry.Location = new System.Drawing.Point(442, 118);
-			this.cmbCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbCountry.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbCountry.Name = "cmbCountry";
 			this.cmbCountry.Size = new System.Drawing.Size(326, 36);
 			this.cmbCountry.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -340,7 +340,7 @@
 			this.cmbCity.ForeColor = System.Drawing.Color.Black;
 			this.cmbCity.ItemHeight = 30;
 			this.cmbCity.Location = new System.Drawing.Point(442, 188);
-			this.cmbCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbCity.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbCity.Name = "cmbCity";
 			this.cmbCity.Size = new System.Drawing.Size(326, 36);
 			this.cmbCity.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -369,7 +369,7 @@
 			this.cmbStreet.ForeColor = System.Drawing.Color.Black;
 			this.cmbStreet.ItemHeight = 30;
 			this.cmbStreet.Location = new System.Drawing.Point(442, 277);
-			this.cmbStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbStreet.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbStreet.Name = "cmbStreet";
 			this.cmbStreet.Size = new System.Drawing.Size(326, 36);
 			this.cmbStreet.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -398,7 +398,7 @@
 			this.cmbHouse.ForeColor = System.Drawing.Color.Black;
 			this.cmbHouse.ItemHeight = 30;
 			this.cmbHouse.Location = new System.Drawing.Point(442, 357);
-			this.cmbHouse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbHouse.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbHouse.Name = "cmbHouse";
 			this.cmbHouse.Size = new System.Drawing.Size(326, 36);
 			this.cmbHouse.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -427,7 +427,7 @@
 			this.cmbApartment.ForeColor = System.Drawing.Color.Black;
 			this.cmbApartment.ItemHeight = 30;
 			this.cmbApartment.Location = new System.Drawing.Point(442, 445);
-			this.cmbApartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbApartment.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbApartment.Name = "cmbApartment";
 			this.cmbApartment.Size = new System.Drawing.Size(326, 36);
 			this.cmbApartment.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -460,7 +460,7 @@
 			this.btnAlloteRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAlloteRoom.ForeColor = System.Drawing.Color.Black;
 			this.btnAlloteRoom.Location = new System.Drawing.Point(1006, 436);
-			this.btnAlloteRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnAlloteRoom.Margin = new System.Windows.Forms.Padding(2);
 			this.btnAlloteRoom.Name = "btnAlloteRoom";
 			this.btnAlloteRoom.Size = new System.Drawing.Size(149, 39);
 			this.btnAlloteRoom.TabIndex = 29;
@@ -478,7 +478,7 @@
 			this.cmbBed.ForeColor = System.Drawing.Color.Black;
 			this.cmbBed.ItemHeight = 30;
 			this.cmbBed.Location = new System.Drawing.Point(831, 277);
-			this.cmbBed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbBed.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbBed.Name = "cmbBed";
 			this.cmbBed.Size = new System.Drawing.Size(150, 36);
 			this.cmbBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -507,7 +507,7 @@
 			this.cmbRoomType.ForeColor = System.Drawing.Color.Black;
 			this.cmbRoomType.ItemHeight = 30;
 			this.cmbRoomType.Location = new System.Drawing.Point(1006, 277);
-			this.cmbRoomType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbRoomType.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbRoomType.Name = "cmbRoomType";
 			this.cmbRoomType.Size = new System.Drawing.Size(150, 36);
 			this.cmbRoomType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -536,7 +536,7 @@
 			this.cmbRoom.ForeColor = System.Drawing.Color.Black;
 			this.cmbRoom.ItemHeight = 30;
 			this.cmbRoom.Location = new System.Drawing.Point(831, 357);
-			this.cmbRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cmbRoom.Margin = new System.Windows.Forms.Padding(2);
 			this.cmbRoom.Name = "cmbRoom";
 			this.cmbRoom.Size = new System.Drawing.Size(326, 36);
 			this.cmbRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -626,10 +626,11 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtName);
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "UC_CustomerRegistration";
 			this.Size = new System.Drawing.Size(1214, 520);
 			this.Load += new System.EventHandler(this.UC_CustomerRegistration_Load);
+			this.Enter += new System.EventHandler(this.UC_CustomerRegistration_Enter);
 			this.Leave += new System.EventHandler(this.UC_CustomerRegistration_Leave);
 			this.ResumeLayout(false);
 			this.PerformLayout();

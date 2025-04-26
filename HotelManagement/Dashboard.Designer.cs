@@ -38,14 +38,16 @@
 			this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
 			this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.uC_CustomerRegistration1 = new HotelManagement.All_User_Control.UC_CustomerRegistration();
-			this.uC_AddRoom1 = new HotelManagement.All_User_Control.UC_AddRoom();
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
 			this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
 			this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+			this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+			this.uC_CustomerDetails1 = new HotelManagement.All_User_Control.UC_CustomerDetails();
 			this.uC_CustomerCheckOut1 = new HotelManagement.All_User_Control.UC_CustomerCheckOut();
+			this.uC_CustomerRegistration1 = new HotelManagement.All_User_Control.UC_CustomerRegistration();
+			this.uC_AddRoom1 = new HotelManagement.All_User_Control.UC_AddRoom();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -195,6 +197,7 @@
 			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel2.Controls.Add(this.uC_CustomerDetails1);
 			this.panel2.Controls.Add(this.uC_CustomerCheckOut1);
 			this.panel2.Controls.Add(this.uC_CustomerRegistration1);
 			this.panel2.Controls.Add(this.uC_AddRoom1);
@@ -203,30 +206,6 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1216, 525);
 			this.panel2.TabIndex = 1;
-			// 
-			// uC_CustomerRegistration1
-			// 
-			this.uC_CustomerRegistration1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
-			this.uC_CustomerRegistration1.Location = new System.Drawing.Point(2, 3);
-			this.uC_CustomerRegistration1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-			this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
-			this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1214, 520);
-			this.uC_CustomerRegistration1.TabIndex = 1;
-			// 
-			// uC_AddRoom1
-			// 
-			this.uC_AddRoom1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-			this.uC_AddRoom1.Location = new System.Drawing.Point(0, 2);
-			this.uC_AddRoom1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-			this.uC_AddRoom1.Name = "uC_AddRoom1";
-			this.uC_AddRoom1.Size = new System.Drawing.Size(1214, 529);
-			this.uC_AddRoom1.TabIndex = 0;
 			// 
 			// guna2Elipse1
 			// 
@@ -280,6 +259,20 @@
 			// 
 			this.guna2Elipse3.BorderRadius = 30;
 			// 
+			// guna2Elipse4
+			// 
+			this.guna2Elipse4.BorderRadius = 30;
+			this.guna2Elipse4.TargetControl = this;
+			// 
+			// uC_CustomerDetails1
+			// 
+			this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
+			this.uC_CustomerDetails1.Location = new System.Drawing.Point(1, 1);
+			this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
+			this.uC_CustomerDetails1.Size = new System.Drawing.Size(1214, 529);
+			this.uC_CustomerDetails1.TabIndex = 5;
+			this.uC_CustomerDetails1.Visible = false;
+			// 
 			// uC_CustomerCheckOut1
 			// 
 			this.uC_CustomerCheckOut1.BackColor = System.Drawing.Color.White;
@@ -287,6 +280,30 @@
 			this.uC_CustomerCheckOut1.Name = "uC_CustomerCheckOut1";
 			this.uC_CustomerCheckOut1.Size = new System.Drawing.Size(1214, 520);
 			this.uC_CustomerCheckOut1.TabIndex = 4;
+			// 
+			// uC_CustomerRegistration1
+			// 
+			this.uC_CustomerRegistration1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
+			this.uC_CustomerRegistration1.Location = new System.Drawing.Point(2, 3);
+			this.uC_CustomerRegistration1.Margin = new System.Windows.Forms.Padding(2);
+			this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
+			this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1214, 520);
+			this.uC_CustomerRegistration1.TabIndex = 1;
+			// 
+			// uC_AddRoom1
+			// 
+			this.uC_AddRoom1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+			this.uC_AddRoom1.Location = new System.Drawing.Point(0, 2);
+			this.uC_AddRoom1.Margin = new System.Windows.Forms.Padding(2);
+			this.uC_AddRoom1.Name = "uC_AddRoom1";
+			this.uC_AddRoom1.Size = new System.Drawing.Size(1214, 529);
+			this.uC_AddRoom1.TabIndex = 0;
 			// 
 			// Dashboard
 			// 
@@ -330,5 +347,7 @@
 		private All_User_Control.UC_CustomerRegistration uC_CustomerRegistration1;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
 		private All_User_Control.UC_CustomerCheckOut uC_CustomerCheckOut1;
+		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+		private All_User_Control.UC_CustomerDetails uC_CustomerDetails1;
 	}
 }

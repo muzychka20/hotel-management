@@ -40,7 +40,6 @@ namespace HotelManagement.All_User_Control
 
 		private void SetDataGridViewHeader()
 		{
-			dataGridCustomerCheckOut.Columns["id"].HeaderText = "Client ID";
 			dataGridCustomerCheckOut.Columns["name"].HeaderText = "Client Name";
 			dataGridCustomerCheckOut.Columns["phone"].HeaderText = "Phone Number";
 			dataGridCustomerCheckOut.Columns["dob"].HeaderText = "Date of Birth";
@@ -106,6 +105,11 @@ namespace HotelManagement.All_User_Control
 			txtRoom.Text = "";
 			selectedRoomId = 0;
 
+			LoadData();
+		}
+
+		private void UC_CustomerCheckOut_Enter(object sender, EventArgs e)
+		{
 			LoadData();
 		}
 	}

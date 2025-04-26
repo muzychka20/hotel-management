@@ -253,5 +253,10 @@ namespace HotelManagement.All_User_Control
 		{
 			ClearForm();
 		}
+
+		private void UC_CustomerRegistration_Enter(object sender, EventArgs e)
+		{
+			ClearForm();
+		}
 	}
 }

@@ -53,6 +53,8 @@ namespace HotelManagement
 		{
 			MovingPanel.Left = btnCustomerDetail.Left + 15;
 			MovingPanel.Width = btnCustomerDetail.Width - 30;
+			uC_CustomerDetails1.Visible = true;
+			uC_CustomerDetails1.BringToFront();
 		}
 
 		private void btnEmployee_Click(object sender, EventArgs e)
