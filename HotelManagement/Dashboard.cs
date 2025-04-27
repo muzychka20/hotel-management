@@ -61,6 +61,8 @@ namespace HotelManagement
 		{
 			MovingPanel.Left = btnEmployee.Left + 15;
 			MovingPanel.Width = btnEmployee.Width - 30;
+			uC_Employee1.Visible = true;
+			uC_Employee1.BringToFront();
 		}
 
 		private void btnMinimize_Click(object sender, EventArgs e)
@@ -72,6 +74,9 @@ namespace HotelManagement
 		{
 			uC_AddRoom1.Visible = false;
 			uC_CustomerRegistration1.Visible = false;
+			uC_CustomerCheckOut1.Visible = false;
+			uC_CustomerDetails1.Visible = false;
+			uC_Employee1.Visible = false;
 			btnAddRoom.PerformClick();
 		}
 	}
