@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,18 +25,42 @@ namespace HotelManagement
 
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
-			if (txtUsername.Text == "admin" && txtPassword.Text == "pass")
+			string username = txtUsername.Text.Trim();
+			string password = txtPassword.Text.Trim();
+
+			if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
 			{
+				labelError.Visible = true;
+				return;
+			}
+
+			try
+			{
+				DatabaseHelper db = new DatabaseHelper();
+
+				var parameters = new Dictionary<string, object>
+				{
+					{ "@emp_login", username },
+					{ "@emp_pass", password }
+				};
+
+				db.ExecuteStoredProcedure("AuthUser", parameters);
+
 				labelError.Visible = false;
 				Dashboard ds = new Dashboard();
 				this.Hide();
 				ds.Show();
 			}
-			else
+			catch (SqlException ex)
 			{
 				labelError.Visible = true;
-				txtPassword.Clear();
 			}
+			catch (Exception ex)
+			{
+				labelError.Visible = true;
+			}
+
+			txtPassword.Clear();
 		}
 	}
 }
