@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
 			this.label3 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
 			this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
 			this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -55,7 +57,7 @@
 			this.panel1.Controls.Add(this.guna2CirclePictureBox1);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Location = new System.Drawing.Point(-1, 0);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(540, 305);
 			this.panel1.TabIndex = 0;
@@ -72,7 +74,7 @@
 			this.btnExit.Image = global::HotelManagement.Properties.Resources.cancel_50px;
 			this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
 			this.btnExit.Location = new System.Drawing.Point(23, 25);
-			this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnExit.Margin = new System.Windows.Forms.Padding(2);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
 			this.btnExit.Size = new System.Drawing.Size(26, 28);
@@ -116,7 +118,7 @@
 			this.btnLogin.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.Location = new System.Drawing.Point(309, 206);
-			this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.Size = new System.Drawing.Size(180, 37);
 			this.btnLogin.TabIndex = 5;
@@ -178,7 +180,7 @@
 			this.guna2CirclePictureBox2.Image = global::HotelManagement.Properties.Resources.circular_loading;
 			this.guna2CirclePictureBox2.ImageRotate = 0F;
 			this.guna2CirclePictureBox2.Location = new System.Drawing.Point(19, 32);
-			this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(2);
 			this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
 			this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
 			this.guna2CirclePictureBox2.Size = new System.Drawing.Size(239, 241);
@@ -193,7 +195,7 @@
 			this.guna2CirclePictureBox1.Image = global::HotelManagement.Properties.Resources.login;
 			this.guna2CirclePictureBox1.ImageRotate = 0F;
 			this.guna2CirclePictureBox1.Location = new System.Drawing.Point(-20, 38);
-			this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
 			this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
 			this.guna2CirclePictureBox1.Size = new System.Drawing.Size(318, 240);
@@ -212,6 +214,11 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "User Login";
 			// 
+			// guna2Elipse1
+			// 
+			this.guna2Elipse1.BorderRadius = 30;
+			this.guna2Elipse1.TargetControl = this;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,13 +229,12 @@
 			this.ClientSize = new System.Drawing.Size(537, 303);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MaximumSize = new System.Drawing.Size(537, 303);
 			this.MinimumSize = new System.Drawing.Size(537, 303);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
@@ -249,6 +255,7 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label labelError;
 		private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 	}
 }
 

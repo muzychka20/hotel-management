@@ -5,17 +5,20 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace HotelManagement
 {
-	public partial class Form1 : Form
+	public partial class Form1 : MovableForm
 	{
 		public Form1()
 		{
 			InitializeComponent();
+			EnableWindowDrag(panel1);
 		}
 
 		private void btnExit_Click(object sender, EventArgs e)

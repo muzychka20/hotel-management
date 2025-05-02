@@ -32,24 +32,24 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.MovingPanel = new System.Windows.Forms.Panel();
+			this.btnEmployee = new Guna.UI2.WinForms.Guna2Button();
+			this.btnCustomerDetail = new Guna.UI2.WinForms.Guna2Button();
+			this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
+			this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
+			this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.uC_Employee1 = new HotelManagement.All_User_Control.UC_Employee();
+			this.uC_CustomerDetails1 = new HotelManagement.All_User_Control.UC_CustomerDetails();
+			this.uC_CustomerCheckOut1 = new HotelManagement.All_User_Control.UC_CustomerCheckOut();
+			this.uC_CustomerRegistration1 = new HotelManagement.All_User_Control.UC_CustomerRegistration();
+			this.uC_AddRoom1 = new HotelManagement.All_User_Control.UC_AddRoom();
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
 			this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
-			this.btnEmployee = new Guna.UI2.WinForms.Guna2Button();
-			this.btnCustomerDetail = new Guna.UI2.WinForms.Guna2Button();
-			this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
-			this.btnCustomerRegistration = new Guna.UI2.WinForms.Guna2Button();
-			this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-			this.uC_CustomerDetails1 = new HotelManagement.All_User_Control.UC_CustomerDetails();
-			this.uC_CustomerCheckOut1 = new HotelManagement.All_User_Control.UC_CustomerCheckOut();
-			this.uC_CustomerRegistration1 = new HotelManagement.All_User_Control.UC_CustomerRegistration();
-			this.uC_AddRoom1 = new HotelManagement.All_User_Control.UC_AddRoom();
-			this.uC_Employee1 = new HotelManagement.All_User_Control.UC_Employee();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -78,80 +78,6 @@
 			this.MovingPanel.Name = "MovingPanel";
 			this.MovingPanel.Size = new System.Drawing.Size(187, 5);
 			this.MovingPanel.TabIndex = 4;
-			// 
-			// panel2
-			// 
-			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel2.Controls.Add(this.uC_Employee1);
-			this.panel2.Controls.Add(this.uC_CustomerDetails1);
-			this.panel2.Controls.Add(this.uC_CustomerCheckOut1);
-			this.panel2.Controls.Add(this.uC_CustomerRegistration1);
-			this.panel2.Controls.Add(this.uC_AddRoom1);
-			this.panel2.Location = new System.Drawing.Point(18, 150);
-			this.panel2.Margin = new System.Windows.Forms.Padding(2);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1216, 525);
-			this.panel2.TabIndex = 1;
-			// 
-			// guna2Elipse1
-			// 
-			this.guna2Elipse1.BorderRadius = 30;
-			this.guna2Elipse1.TargetControl = this;
-			// 
-			// guna2Elipse2
-			// 
-			this.guna2Elipse2.BorderRadius = 30;
-			this.guna2Elipse2.TargetControl = this;
-			// 
-			// guna2Elipse3
-			// 
-			this.guna2Elipse3.BorderRadius = 30;
-			this.guna2Elipse3.TargetControl = this;
-			// 
-			// guna2Elipse4
-			// 
-			this.guna2Elipse4.BorderRadius = 30;
-			this.guna2Elipse4.TargetControl = this;
-			// 
-			// btnMinimize
-			// 
-			this.btnMinimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnMinimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnMinimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnMinimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnMinimize.FillColor = System.Drawing.Color.Empty;
-			this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnMinimize.ForeColor = System.Drawing.Color.White;
-			this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-			this.btnMinimize.ImageSize = new System.Drawing.Size(30, 30);
-			this.btnMinimize.Location = new System.Drawing.Point(9, 55);
-			this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
-			this.btnMinimize.Name = "btnMinimize";
-			this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-			this.btnMinimize.Size = new System.Drawing.Size(53, 43);
-			this.btnMinimize.TabIndex = 3;
-			this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-			// 
-			// btnExit
-			// 
-			this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnExit.FillColor = System.Drawing.Color.Empty;
-			this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnExit.ForeColor = System.Drawing.Color.White;
-			this.btnExit.Image = global::HotelManagement.Properties.Resources.cancel_50px;
-			this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-			this.btnExit.Location = new System.Drawing.Point(9, 11);
-			this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-			this.btnExit.Name = "btnExit";
-			this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-			this.btnExit.Size = new System.Drawing.Size(53, 43);
-			this.btnExit.TabIndex = 2;
-			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// btnEmployee
 			// 
@@ -268,10 +194,29 @@
 			this.btnAddRoom.Text = "Add Room";
 			this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
 			// 
-			// guna2Elipse5
+			// panel2
 			// 
-			this.guna2Elipse5.BorderRadius = 30;
-			this.guna2Elipse5.TargetControl = this;
+			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel2.Controls.Add(this.uC_Employee1);
+			this.panel2.Controls.Add(this.uC_CustomerDetails1);
+			this.panel2.Controls.Add(this.uC_CustomerCheckOut1);
+			this.panel2.Controls.Add(this.uC_CustomerRegistration1);
+			this.panel2.Controls.Add(this.uC_AddRoom1);
+			this.panel2.Location = new System.Drawing.Point(18, 150);
+			this.panel2.Margin = new System.Windows.Forms.Padding(2);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(1216, 525);
+			this.panel2.TabIndex = 1;
+			// 
+			// uC_Employee1
+			// 
+			this.uC_Employee1.BackColor = System.Drawing.Color.White;
+			this.uC_Employee1.Location = new System.Drawing.Point(2, 3);
+			this.uC_Employee1.Name = "uC_Employee1";
+			this.uC_Employee1.Size = new System.Drawing.Size(1214, 520);
+			this.uC_Employee1.TabIndex = 6;
 			// 
 			// uC_CustomerDetails1
 			// 
@@ -314,13 +259,68 @@
 			this.uC_AddRoom1.Size = new System.Drawing.Size(1214, 529);
 			this.uC_AddRoom1.TabIndex = 0;
 			// 
-			// uC_Employee1
+			// guna2Elipse1
 			// 
-			this.uC_Employee1.BackColor = System.Drawing.Color.White;
-			this.uC_Employee1.Location = new System.Drawing.Point(2, 3);
-			this.uC_Employee1.Name = "uC_Employee1";
-			this.uC_Employee1.Size = new System.Drawing.Size(1214, 520);
-			this.uC_Employee1.TabIndex = 6;
+			this.guna2Elipse1.BorderRadius = 30;
+			this.guna2Elipse1.TargetControl = this;
+			// 
+			// guna2Elipse2
+			// 
+			this.guna2Elipse2.BorderRadius = 30;
+			this.guna2Elipse2.TargetControl = this;
+			// 
+			// guna2Elipse3
+			// 
+			this.guna2Elipse3.BorderRadius = 30;
+			this.guna2Elipse3.TargetControl = this;
+			// 
+			// guna2Elipse4
+			// 
+			this.guna2Elipse4.BorderRadius = 30;
+			this.guna2Elipse4.TargetControl = this;
+			// 
+			// btnMinimize
+			// 
+			this.btnMinimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnMinimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnMinimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnMinimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnMinimize.FillColor = System.Drawing.Color.Empty;
+			this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btnMinimize.ForeColor = System.Drawing.Color.White;
+			this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+			this.btnMinimize.ImageSize = new System.Drawing.Size(30, 30);
+			this.btnMinimize.Location = new System.Drawing.Point(9, 55);
+			this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
+			this.btnMinimize.Name = "btnMinimize";
+			this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.btnMinimize.Size = new System.Drawing.Size(53, 43);
+			this.btnMinimize.TabIndex = 3;
+			this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+			// 
+			// btnExit
+			// 
+			this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnExit.FillColor = System.Drawing.Color.Empty;
+			this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btnExit.ForeColor = System.Drawing.Color.White;
+			this.btnExit.Image = global::HotelManagement.Properties.Resources.cancel_50px;
+			this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+			this.btnExit.Location = new System.Drawing.Point(9, 11);
+			this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+			this.btnExit.Name = "btnExit";
+			this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.btnExit.Size = new System.Drawing.Size(53, 43);
+			this.btnExit.TabIndex = 2;
+			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+			// 
+			// guna2Elipse5
+			// 
+			this.guna2Elipse5.BorderRadius = 30;
+			this.guna2Elipse5.TargetControl = this;
 			// 
 			// Dashboard
 			// 
@@ -338,7 +338,6 @@
 			this.Name = "Dashboard";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Dashboard";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Dashboard_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);

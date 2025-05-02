@@ -8,14 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+
 
 namespace HotelManagement
 {
-	public partial class Dashboard : Form
+	public partial class Dashboard : MovableForm
 	{
 		public Dashboard()
 		{
 			InitializeComponent();
+			EnableWindowDrag(panel1);
 			MovingPanel.Left = btnAddRoom.Left + 15;
 			MovingPanel.Width = btnAddRoom.Width - 30;
 		}
